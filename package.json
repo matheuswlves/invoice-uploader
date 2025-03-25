@@ -13,6 +13,7 @@
     "@nestjs/platform-express": "^11.0.12",
     "@prisma/client": "^6.5.0",
     "openai": "^4.89.0",
+    "reflect-metadata": "^0.2.2",
     "tesseract.js": "^6.0.0"
   },
   "devDependencies": {
