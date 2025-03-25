@@ -1,0 +1,17 @@
+# Ignorar a pasta node_modules (dependências locais)
+node_modules/
+
+# Ignorar o arquivo .git
+.git/
+
+# Ignorar arquivos temporários de logs
+*.log
+
+# Ignorar arquivos de cache do sistema
+*.swp
+
+# Ignorar a pasta de build (caso tenha)
+build/
+
+# Ignorar arquivos de configuração do editor (como VSCode)
+.vscode/
