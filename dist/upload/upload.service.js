@@ -27,12 +27,12 @@ const openai_1 = __importDefault(require("openai"));
 let UploadService = class UploadService {
     constructor() {
         this.openai = new openai_1.default({
-            apiKey: process.env.OPENAI_API_KEY, // Certifique-se de que essa variável de ambiente esteja definida
+            apiKey: process.env.OPENAI_API_KEY,
         });
     }
     processFile(file) {
         return __awaiter(this, void 0, void 0, function* () {
-            const extractedText = 'Texto extraído de exemplo'; // Aqui deve vir o OCR real
+            const extractedText = 'Texto extraído de exemplo';
             return {
                 id: 1,
                 filename: file.originalname,

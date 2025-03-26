@@ -8,12 +8,12 @@ export class UploadService {
 
   constructor() {
     this.openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY, // Certifique-se de que essa variável de ambiente esteja definida
+      apiKey: process.env.OPENAI_API_KEY, 
     });
   }
 
   async processFile(file: Express.Multer.File): Promise<{ id: number; filename: string; extractedText: string }> {
-    const extractedText = 'Texto extraído de exemplo'; // Aqui deve vir o OCR real
+    const extractedText = 'Texto extraído de exemplo';
     return {
       id: 1,
       filename: file.originalname,

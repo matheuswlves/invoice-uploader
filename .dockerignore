@@ -1,4 +1,4 @@
-# Ignorar a pasta node_modules (dependências locais)
+# Ignorar a pasta node_modules 
 node_modules/
 
 # Ignorar o arquivo .git
@@ -10,7 +10,7 @@ node_modules/
 # Ignorar arquivos de cache do sistema
 *.swp
 
-# Ignorar a pasta de build (caso tenha)
+# Ignorar a pasta de build 
 build/
 
 # Ignorar arquivos de configuração do editor (como VSCode)

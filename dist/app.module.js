@@ -8,16 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
+const platform_express_1 = require("@nestjs/platform-express");
 const upload_controller_1 = require("./upload/upload.controller");
 const upload_service_1 = require("./upload/upload.service");
-const prisma_service_1 = require("./prisma.service");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [],
+        imports: [
+            platform_express_1.MulterModule.register({
+                dest: './uploads', // Pasta onde os arquivos serão salvos
+            }),
+        ],
         controllers: [upload_controller_1.UploadController],
-        providers: [upload_service_1.UploadService, prisma_service_1.PrismaService],
+        providers: [upload_service_1.UploadService],
     })
 ], AppModule);
